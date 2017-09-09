@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="mt-5">
+    <%= form_tag recipe_search_path, method: :get, class: "search-form", role: "form" do %>
+      <div class="input-group">
+        <%= text_field_tag :query, params[:query], type: "text", class: "form-control", placeholder: "Search for..." %>
+        <span class="input-group-btn"><%= submit_tag "Search", type: "button", class: "btn btn-outline-secondary" %></span>
+      </div>
+    <% end %>
+  </div>
+</div>
